@@ -1,0 +1,155 @@
+/* index */
+*{
+    padding: 0;
+    margin: 0;
+}
+nav{
+    
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: red;
+    padding: 20px;
+
+}
+h1{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    text-decoration: underline;
+    color: black;
+    text-align: center;
+    text-align: justify;
+    font-family: Georgia, serif;
+}
+
+nav{
+    text-decoration: none;
+}
+.galerie{
+
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    gap: 30px;
+    flex-wrap: wrap;    
+}
+
+
+.galerie>img{
+
+    height: 150px;
+    width: 150px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+.presentation{
+    display: flex;
+    justify-content: center;
+}
+/* entreprise */
+.entreprise{
+    font-family: Georgia, serif;
+    text-align: center;
+    text-align: justify;
+    display:flex;
+    height: 150px;
+    width: 150px;
+    background-color: white;
+    padding: 200px;
+}
+
+.equipe{
+
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    gap: 30px;
+    flex-wrap: wrap;   
+}
+
+.equipe>img{
+    height: 150px;
+    width: 150px;
+    border-radius: 200px;
+    object-fit: cover;
+}
+
+/* réalisation */
+
+
+.fleur{
+ display: grid;
+ justify-content: center;
+ margin-top: 50px;
+ gap: 30px;
+ flex-wrap: wrap;
+ grid-template-columns: 250px 250px 250px;
+ grid-template-rows: auto;
+ align-items: center;
+}
+
+
+.fleur>img{
+ width: 250px;
+ border-radius: 100px;
+ object-fit: cover;
+}
+
+/* Styles pour la section de contact */
+.contactez-nous {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contactez-nous h1 {
+    font-size: 24px;
+    color: #333;
+}
+
+.contactez-nous p {
+    font-size: 16px;
+    color: #666;
+}
+
+.contactez-nous form {
+    text-align: left;
+}
+
+.contactez-nous label {
+    display: block;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+.contactez-nous input,
+.contactez-nous select,
+.contactez-nous textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contactez-nous button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contactez-nous button:hover {
+    background-color: #0056b3;
+}

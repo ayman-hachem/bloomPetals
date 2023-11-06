@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BloomPetals</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+
+    <header>
+        <body>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="entreprise.html">Entreprise</a>
+            <a href="realisation.html">Realisations</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <input id="searchbar" type="text">
+    </header>
+    <!--formulaire de contact-->
+    <br>
+    <div class="contactez-nous">
+        <h1>Contactez-nous</h1>
+        <p>Un problème, une Question ? N’hésitez pas à utiliser ce formulaire pour prendre contact avec nous !</p>
+        <form action="/page-traitement-donnees" method="post">
+        <div>
+        <label for="civilité">Quel est votre civilité?</label>
+    <select name="civilité" id="civilité">
+        <option value="--Please choose an option--">--Veuillez choisir une option--</option>
+        <option value="Homme">Homme</option>
+        <option value="Femme">Femme</option>
+        <option value="Animal">Animal</option>
+    </select>
+    <form>
+        <br>
+        <label for="Nom">Nom:</label>
+        <input type="text" id="Nom" name="Nom" placeholder="Dupont" required>
+        <br>
+      
+        <label for="Prenom">Prénom:</label>
+        <input type="text" id="Prenom" name="Prenom" placeholder="Martin" required>
+        <br>
+
+        <label for="email">E-mail :</label>
+        <input type="email" id="email" name="email" placeholder="monadresse@mail.com" required>
+        <br>
+
+        <label for="phone">Téléphone :</label>
+        <input type="tel" id="phone" name="phone" required pattern="0[67]([0-9]{8}|[0-9]{1} [0-9]{2} [0-9]{2} [0-9]{2} [0-9]{2})" inputmode="tel">
+        <!-- L'attribut inputmode spécifie que le champ est un numéro de téléphone -->
+        <br>
+        <label for="street">Rue :</label>
+        <input type="text" id="street" name="street" required>
+        <br>
+
+      <label for="city">Ville :</label>
+        <input type="text" id="city" name="city" required pattern="[A-Za-z ]+">
+        <!-- Le pattern spécifie que la ville doit contenir des lettres et des espaces -->
+        <br>
+
+        <label for="postalCode">Code postal :</label>
+        <input type="text" id="postalCode" name="postalCode" required pattern="\d{5}">
+        <!-- Le pattern spécifie un code postal de 5 chiffres -->
+        <br>
+
+    </form>
+        </div>
+        <div>
+        <label for="sujet">Quel est le sujet de votre message ?</label>
+        <select name="sujet" id="sujet" required>
+        <option value="" disabled selected hidden>Choisissez le sujet de votre message</option>
+        <option value="probleme-compte">Problème avec mon compte</option>
+        <option value="question-produit">Question à propos d’un produit</option>
+        <option value="suivi-commande">Suivi de ma commande</option>
+        <option value="autre">Autre...</option>
+        </select>
+        </div>
+        <div>
+        <label for="message">Votre message</label>
+        <textarea id="message" name="message" placeholder="Bonjour, je vous contacte car...." required></textarea>
+        </div>
+        <div>
+        <button type="submit">Envoyer mon message</button>
+        </div>
+        </form>
+        </div>
+</body>
+</html>
